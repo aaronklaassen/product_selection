@@ -213,5 +213,23 @@ PRODUCTS = {
         ["10042","17.5 x 25","Require measurements","120144DD"],
         ["10054","17.5 x 25","Require measurements","120144DD"]
       ]
-    }
+    },
+
+  "Parts List": {
+    "Tiresocks": [
+    ]
+  }
+}
+
+COLUMNS = {
+  "default":    [ "Model", "Tire Size", "Tiresocks Part #",  "DripDiaper Part #" ],
+  "Parts List": {
+    "Tiresocks":        ["Fits Tire Size (Tire Designation)", "Part #"],
+    "Dripdrapers":      ["Wheel Base", "Part #"],
+    "Tracksocks":       ["Track Size", "Part #"],
+    "Safetypads":       ["Entry Gate", "Part #"],
+    "Castersocks":      ["Wheel Size", "Part #"],
+    "Forksocks":        ["Fork Size", "Part #"],
+    "Outrigger Socks":  ["Foot Size", "Part #"]
+  }
 }
