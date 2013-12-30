@@ -32,7 +32,24 @@ function populateModels() {
 
 }
 
+function updateColumns() {
+  var type = $("#product_type").val();
+  var columns = COLUMNS["default"];
+
+  if (COLUMNS[type] != undefined) {
+    var manf = $("#manufacturer").val();
+    columns = COLUMNS[type][manf];
+  }
+
+  for (var i = 0; i < 4; i++) {
+    var name = columns[i] == undefined ? '' : columns[i];
+    $("th#header_" + i).html(name)
+  }
+}
+
 function displayProductInfo() {
+  updateColumns();
+
   var type = $("#product_type").val();
   var manf = $("#manufacturer").val();
   var model_index = $("#models").prop("selectedIndex") - 1;
